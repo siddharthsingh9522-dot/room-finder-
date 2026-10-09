@@ -1,0 +1,9 @@
+name = "roomrahi-ai"
+main = "ai-worker.js"
+compatibility_date = "2025-01-01"
+[vars]
+SUPABASE_URL = "https://YOUR_PROJECT.supabase.co"
+ALLOWED_ORIGIN = "https://your-app-domain.com"
+# SUPABASE_ANON_KEY = "..."   (public key)
+# Secret (never in this file):  npx wrangler secret put GEMINI_API_KEY --config wrangler.ai.toml
+# Optional rate limit: [[kv_namespaces]] binding = "RATE_KV"  id = "..."

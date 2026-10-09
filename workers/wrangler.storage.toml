@@ -1,0 +1,13 @@
+name = "roomrahi-storage"
+main = "storage-worker.js"
+compatibility_date = "2025-01-01"
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "roomrahi-photos"
+[vars]
+SUPABASE_URL = "https://YOUR_PROJECT.supabase.co"
+R2_PUBLIC_URL = "https://photos.yourdomain.com"
+ALLOWED_ORIGIN = "https://your-app-domain.com"
+# SUPABASE_ANON_KEY is public (not a secret) — put it here or as a var:
+# SUPABASE_ANON_KEY = "..."
+# Optional rate limit: [[kv_namespaces]] binding = "RATE_KV"  id = "..."
